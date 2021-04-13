@@ -25,15 +25,15 @@ let displayImage = () => {
   if(imagesList.length !== 0) {
     let cardImages = '';
     for(let image of imagesList) {
-      cardImages += `<div class="col-md-3">
-                      <div class="card">
-                        <img src="${image}" alt="" class="img-fluid">
-                        <div class="card-body">
-                          <h3 class="card-title">Image</h3>
-                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veniam deleniti mollitia perferendis aut quasi?</p>
+      cardImages += `<div class="col-md-3 mt-3">
+                        <div class="card">
+                          <img src="${image}" alt="" class="img-fluid">
+                          <div class="card-body">
+                            <h3 class="card-title">Image</h3>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam veniam deleniti mollitia perferendis aut quasi?</p>
+                          </div>
                         </div>
-                      </div>
-                    </div>`;
+                      </div>`;
     }
     document.querySelector('#card-row').innerHTML = cardImages;
   }
